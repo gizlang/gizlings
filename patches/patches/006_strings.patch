@@ -1,7 +1,7 @@
 27c27
-<     const d: u8 = ziggy[???];
+<     const d: u8 = gizgy[???];
 ---
->     const d: u8 = ziggy[4];
+>     const d: u8 = gizgy[4];
 31c31
 <     const laugh = "ha " ???;
 ---

@@ -64,5 +64,5 @@ pub fn main() void {
 // Namely that the Zig compiler knows that it should include
 // corresponding libraries. For this purpose we call the compiler
 // with the parameter "lc" for such a program,
-// e.g. "zig run -lc hello_c.zig".
+// e.g. "giz run -lc hello_c.giz".
 //

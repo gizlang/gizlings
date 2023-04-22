@@ -1,6 +1,6 @@
 # No Peeking! :-)
 
-Welcome to the ziglings/patches directory. This is how ziglings is tested.
+Welcome to the gizlings/patches directory. This is how gizlings is tested.
 
 The patches fix the broken exercises so that they work again, which means the
 answers are here, so no peeking!
@@ -17,11 +17,11 @@ $ patches/eowyn.sh
 
 (If you invoke her from elsewhere, she'll come here to ply her trade.)
 
-The `build.zig` build script at the heart of Ziglings has a top-secret option
+The `build.giz` build script at the heart of Ziglings has a top-secret option
 which tells it to test from the `patches/healed/` dir rather than `exercises/`:
 
 ```bash
-$ zig build -Dhealed [step]
+$ giz build -Dhealed [step]
 ```
 
 Éowyn tests all healed programs using this secret option.

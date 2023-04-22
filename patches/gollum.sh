@@ -14,9 +14,9 @@ fi
 ex=$(printf "%03d" $1)
 echo "Nassssty exercise $ex..."
 
-f=$(basename exercises/${ex}_*.zig .zig 2> /dev/null)
-b=exercises/$f.zig
-a=answers/$f.zig
+f=$(basename exercises/${ex}_*.giz .giz 2> /dev/null)
+b=exercises/$f.giz
+a=answers/$f.giz
 p=patches/patches/$f.patch
 
 if [ ! -f $b ]; then echo "No $f! We hates it!"; exit 1; fi

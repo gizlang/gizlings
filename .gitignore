@@ -1,5 +1,5 @@
 *~
 *.swp
-zig-cache/
+giz-cache/
 answers/
 patches/healed/

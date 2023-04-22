@@ -69,14 +69,14 @@ fn getBeef(input: u32) u32 {
 // Now when you run the program, it will panic and give you a
 // nice stack trace to help debug the problem.
 //
-//     zig run exercises/090_async7.zig
+//     giz run exercises/090_async7.giz
 //     thread 328 panic: async function called...
 //     ...
 //
 // But see what happens when you turn off safety checks by using
 // ReleaseFast mode:
 //
-//     zig run -O ReleaseFast exercises/090_async7.zig
+//     giz run -O ReleaseFast exercises/090_async7.giz
 //     beef? 0!
 //
 // This is the wrong result. On your computer, you may get a

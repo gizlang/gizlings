@@ -12,7 +12,7 @@
 //         ...
 //     }
 //
-// Try to fix the program and run `ziglings` to see if it works!
+// Try to fix the program and run `gizlings` to see if it works!
 //
 const std = @import("std");
 

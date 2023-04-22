@@ -3,8 +3,8 @@
 // gotten used to seeing an @import() at the top of every
 // Ziglings exercise.
 //
-// We've also seen @intCast() in "016_for2.zig", "058_quiz7.zig";
-// and @enumToInt() in "036_enums2.zig".
+// We've also seen @intCast() in "016_for2.giz", "058_quiz7.giz";
+// and @enumToInt() in "036_enums2.giz".
 //
 // Builtins are special because they are intrinsic to the Zig
 // language itself (as opposed to being provided in the standard

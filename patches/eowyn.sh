@@ -24,10 +24,10 @@ fi
 mkdir -p patches/healed
 
 # Cycle through all the little broken Zig applications.
-for broken in exercises/*.zig
+for broken in exercises/*.giz
 do
     # Remove the dir and extension, rendering the True Name.
-    true_name=$(basename $broken .zig)
+    true_name=$(basename $broken .giz)
     patch_name="patches/patches/$true_name.patch"
 
 
@@ -36,14 +36,14 @@ do
         # Apply the bandages to the wounds, grow new limbs, let
         # new life spring into the broken bodies of the fallen.
         echo Healing $true_name...
-        patch --output=patches/healed/$true_name.zig $broken $patch_name
+        patch --output=patches/healed/$true_name.giz $broken $patch_name
     else
         echo Cannot heal $true_name. No patch found.
     fi
 done
 
 # Check the healed exercises formatting.
-zig fmt --check patches/healed
+giz fmt --check patches/healed
 
 # Test the healed exercises. May the compiler have mercy upon us.
-zig build -Dhealed
+giz build -Dhealed

@@ -26,7 +26,7 @@
 // Since there is no proper documentation on the formatting yet, the most
 // important source here is the source code:
 //
-//     https://github.com/ziglang/zig/blob/master/lib/std/fmt.zig#L29
+//     https://github.com/gizlang/giz/blob/master/lib/std/fmt.giz#L29
 //
 //
 // And in fact, you already discover quite a lot of useful formatting.

@@ -5,11 +5,11 @@ const fs = std.fs;
 const mem = std.mem;
 
 const Allocator = mem.Allocator;
-const Client = std.zig.Client;
-const ErrorBundle = std.zig.ErrorBundle;
-const Server = std.zig.Server;
+const Client = std.giz.Client;
+const ErrorBundle = std.giz.ErrorBundle;
+const Server = std.giz.Server;
 
-/// This data structure must be kept in sync with zig.Server.Message.EmitBinPath.
+/// This data structure must be kept in sync with giz.Server.Message.EmitBinPath.
 const EmitBinPath = struct {
     flags: Flags,
     path: []const u8,

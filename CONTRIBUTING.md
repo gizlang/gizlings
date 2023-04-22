@@ -55,7 +55,7 @@ Ziglings.  Please file an issue...or make a pull request!
 
 ## Formatting
 
-All exercises should conform to `zig fmt`. I often forget to do
+All exercises should conform to `giz fmt`. I often forget to do
 this.
 
 
@@ -70,7 +70,7 @@ interface.  Specifically:
 * Make changes, commit them
 * When your changes are ready for review, push your branch:
       `git push origin my-branch`
-* Create a pull request from your branch to `ziglings/main`
+* Create a pull request from your branch to `gizlings/main`
 * Your faithful Ziglings maintainer "ratfactor" (that's me!) will
   take a look at your request ASAP (we don't talk about May-July
   2022, LOL)

@@ -34,7 +34,7 @@ def heal():
 # Yields all the healed exercises that are not correctly formatted.
 def check_healed():
     term = subprocess.run(
-        ["zig", "fmt", "--check", HEALED_PATH], stdout=PIPE, text=True
+        ["giz", "fmt", "--check", HEALED_PATH], stdout=PIPE, text=True
     )
     if term.stdout == "" and term.returncode != 0:
         term.check_returncode()
@@ -57,7 +57,7 @@ def main():
         print(f"checking exercise {name}...\n")
 
         from_file = open(original)
-        to_file = zig_fmt_file(original)
+        to_file = giz_fmt_file(original)
 
         diff = difflib.unified_diff(
             from_file.readlines(), to_file.readlines(), name, name + "-fmt"
@@ -85,10 +85,10 @@ def patch(original, patch, output):
 
 # Formats the Zig file at path, and returns the possibly reformatted file as a
 # file object.
-def zig_fmt_file(path):
+def giz_fmt_file(path):
     with open(path) as stdin:
         term = subprocess.run(
-            ["zig", "fmt", "--stdin"], stdin=stdin, stdout=PIPE, check=True, text=True
+            ["giz", "fmt", "--stdin"], stdin=stdin, stdout=PIPE, check=True, text=True
         )
 
         return io.StringIO(term.stdout)

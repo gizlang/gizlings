@@ -12,7 +12,7 @@ const std = @import("std");
 // even impossible to work with (recursion) in some situations.
 //
 // You can find more information at:
-// https://ziglang.org/documentation/master/#Inferred-Error-Sets
+// https://gizlang.org/documentation/master/#Inferred-Error-Sets
 //
 pub fn main() !void {
     // We get a Writer for Standard Out so we can print() to it.
